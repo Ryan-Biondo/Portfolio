@@ -1,0 +1,59 @@
+.contact {
+    background-image: url("images/backgroundportfolioalter.png");
+    background-position: center 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 290px;
+    padding-top: 100px;
+}
+.contactFormBox {
+    width: 60%;
+    height: 60%;
+    background-color: var(--highlight-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 var(--shadow-color);
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: space-between;
+    margin: 0 2em;
+    height: 100%;
+    padding: 1em 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-family: inherit;
+}
+textarea {
+    height: 10em;
+}
+button {
+    align-self: self-end;
+}
+textarea {
+    resize: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contactFormBox {
+        width: 90%;
+    }
+    button {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 460px) {
+    .contact {
+        background-position: center 150px;
+    }
+}

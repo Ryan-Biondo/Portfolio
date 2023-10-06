@@ -1,0 +1,75 @@
+h2 {
+    padding-top: 40px;
+}
+h3 {
+    margin: 0;
+}
+.aboutMeSection {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+.aboutDesc {
+    width: 300px;
+}
+.aboutMeContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    list-style-type: none;
+    padding: 25px 0;
+    margin: 0;
+}
+.skillsListItem {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--highlight-color);
+    font-size: 1.1em;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background: transparent;
+}
+.skillsListItem:hover {
+    border-color: var(--secondary-color);
+    transition: border-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+    .aboutMeSection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5em;
+    }
+    .skillsList {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+    h3 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 399px) {
+    .aboutDesc {
+        width: 100%;
+    }
+    .skillsListItem {
+        font-size: 0.9em;
+        padding: 2px;
+    }
+    .skillsList {
+        margin-bottom: 0.5em;
+    }
+    .aboutMeContact {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

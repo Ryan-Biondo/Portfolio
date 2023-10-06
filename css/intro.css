@@ -76,10 +76,10 @@ p {
 }
 
 #socials {
+    user-select: none;
     position: sticky;
     left: 0;
     top: 50%;
-
     width: 60px;
     padding: 10px;
     font-size: 2em;

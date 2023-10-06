@@ -42,21 +42,20 @@
         </div>
 
         <i class="fas fa-bars" id="menuIcon"></i>
+
         <i class="fas fa-times" id="xIcon"></i>
 
-        <ul id="navLinks">
-          <a href="#intro">
-            <li>Home</li>
-          </a>
-          <a href="#about">
-            <li>About</li>
-          </a>
-          <a href="#projects">
-            <li>Projects</li>
-          </a>
-          <a href="#contact">
-            <li>Contact</li>
-          </a>
+        <ul class="navLinks">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="mobileNavLinks">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div id="socials">
@@ -85,6 +84,10 @@
           <i class="fab fa-twitter"></i>
         </a>
       </div>
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider round"></span>
+      </label>
 
       <section class="introSection" id="intro">
         <h1 class="slidingDownDiv">
@@ -99,10 +102,6 @@
           <i class="arrow-down"></i>
         </div>
       </section>
-      <label class="switch">
-        <input type="checkbox" id="darkModeToggle" />
-        <span class="slider round"></span>
-      </label>
 
       <section id="about" class="main">
         <h2 class="h2">About Me</h2>

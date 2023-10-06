@@ -1,0 +1,84 @@
+.projectsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.projectBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90vw;
+}
+.projectBox:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.projectBox:not(:last-child) {
+    margin-bottom: 100px;
+}
+.projectText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+.projectImage {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    object-position: left;
+    margin: 1em;
+}
+.projectDescript {
+    width: 100%;
+    text-align: start;
+}
+.projectLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .projectDescript {
+        width: 90vw;
+    }
+    .projectBox {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .projectBox:nth-child(even) {
+        flex-direction: column;
+    }
+    .projectBox:not(:last-child) {
+        margin-bottom: 150px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .projectText {
+        width: 90vw;
+    }
+    .projectBox {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    .projectLinks {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 460px) {
+    .projectImage {
+        width: 90vw;
+        height: 90vw;
+    }
+    .projectDescript {
+        font-size: 0.9em;
+        margin: 20px 0;
+    }
+}

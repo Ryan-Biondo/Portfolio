@@ -18,3 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.getElementById('grabTab').addEventListener('click', function () {
+  const socials = document.getElementById('socials');
+  socials.classList.toggle('hidden');
+});

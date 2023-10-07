@@ -5,6 +5,7 @@
 @import "about.css";
 @import "projects.css";
 @import "contact.css";
+@import "footer.css";
 
 /* Light Theme */
 :root {
@@ -53,7 +54,8 @@ a {
 h2 {
     user-select: none;
     font-size: 2em;
-    margin: 1em 0 1.5em;
+    margin: 1em 0 0.5em;
+    padding-top: 40px;
 }
 .main {
     display: flex;

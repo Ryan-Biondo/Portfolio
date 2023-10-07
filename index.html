@@ -46,7 +46,7 @@
         <i class="fas fa-times" id="xIcon"></i>
 
         <ul class="navLinks">
-          <li><a href="#intro">Home</a></li>
+          <li><a href="#intro">Resume</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -58,7 +58,22 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div id="socials">
+
+      <section class="introSection" id="intro">
+        <h1 class="slidingDownDiv">
+          Ryan <span class="biondoColor">Biondo</span>
+        </h1>
+        <p class="jobTitle slidingDownDiv">Web Developer</p>
+        <p class="downloadResume slidingDownDiv">Download my resume here!</p>
+        <a href="resume" class="slidingDownDiv" download>
+          <button class="button"><i class="fas fa-download"></i> Resume</button>
+        </a>
+        <div class="scroll-indicator">
+          <i class="arrow-down"></i>
+        </div>
+      </section>
+
+      <div id="socials" class="hidden">
         <a
           aria-label="LinkedIn"
           class="socialLink"
@@ -76,38 +91,27 @@
           <i class="fab fa-github"></i>
         </a>
         <a
-          aria-label="Twitter"
+          aria-label="X"
           class="socialLink"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://twitter.com/RyanBiondo/">
+          href="https://x.com/RyanBiondo/">
           <i class="fab fa-twitter"></i>
         </a>
-      </div>
-      <label class="switch">
-        <input type="checkbox" id="darkModeToggle" />
-        <span class="slider round"></span>
-      </label>
-
-      <section class="introSection" id="intro">
-        <h1 class="slidingDownDiv">
-          Ryan <span class="biondoColor">Biondo</span>
-        </h1>
-        <p class="jobTitle slidingDownDiv">Front End Developer</p>
-        <p class="downloadResume slidingDownDiv">Download my resume here!</p>
-        <a href="resume" class="slidingDownDiv" download>
-          <button class="button"><i class="fas fa-download"></i> Resume</button>
+        <a class="socialLink" href="mailto:dev@ryanbiondo.com">
+          <i class="fas fa-envelope"></i>
         </a>
-        <div class="scroll-indicator">
-          <i class="arrow-down"></i>
-        </div>
-      </section>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider round"></span>
+        </label>
+        <div id="grabTab"></div>
+      </div>
 
       <section id="about" class="main">
         <h2 class="h2">About Me</h2>
         <div class="aboutMeSection">
           <div class="skills">
-            <h3 class="h3">Skills</h3>
             <ul class="skillsList">
               <li class="skillsListItem">HTML5</li>
               <li class="skillsListItem">CSS3</li>
@@ -119,11 +123,13 @@
           </div>
 
           <div class="aboutMeContact">
-            <h3>Reach out to me!</h3>
             <p class="aboutDesc">
-              I am a self-taught web developer with a background in restaurant
-              management. I am a web developer based in Colorado. I enjoy
-              working in React and TypeScript. Currently available for hire.
+              Specialized in JavaScript and React, I'm a web developer based in
+              Colorado known for tenacity and rapid delivery. I add value to
+              teams by asking the right questions early and embracing feedback
+              to improve outcomes. I also contribute to the community as the
+              organizer of the coloradoSprings.js meetup. Actively seeking the
+              next challenging project.
             </p>
             <a href="#contact">
               <button class="button">Contact Me</button>
@@ -278,6 +284,61 @@
           </div>
         </div>
       </section>
+
+      <footer>
+        <div class="footerMain">
+          <div class="footerDescription">
+            <p class="footerText">
+              Web Developer specializing in JavaScript & React. Actively seeking
+              the next challenging project.
+            </p>
+            <p class="footerCTA">
+              Interested in working together? <a href="#contact">Let's chat.</a>
+            </p>
+          </div>
+
+          <div class="footerSide">
+            <div class="footerSocials">
+              <a
+                class="footerLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ryan-biondo/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                class="footerLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Ryan-Biondo/">
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                class="footerLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/RyanBiondo/">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="footerLink" href="mailto:dev@ryanbiondo.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+
+            <div class="footerResume">
+              <a href="#intro" class="resumeLink">Back to Resume</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="footerCopyright">
+          &copy; 2023&nbsp;
+          <a href="#intro">
+            <strong>Ryan Biondo</strong>
+          </a>
+          . All Rights Reserved.
+        </p>
+      </footer>
     </div>
     <script src="js/loader.js"></script>
     <script src="js/theme.js"></script>

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 150px;
+    padding-top: 250px;
 }
 
 .projectBox {
@@ -15,7 +15,7 @@
     flex-direction: row-reverse;
 }
 .projectBox:not(:last-child) {
-    margin-bottom: 100px;
+    margin-bottom: 350px;
 }
 .projectText {
     display: flex;
@@ -38,7 +38,8 @@
 }
 .projectLinks {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
     width: 100%;
 }
 

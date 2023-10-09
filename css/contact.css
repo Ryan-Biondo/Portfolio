@@ -1,17 +1,11 @@
 .contact {
-    background-image: url("images/backgroundportfolioalter.png");
-    background-position: center 80px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 290px;
-    padding-top: 100px;
+    padding-bottom: 240px;
+    padding-top: 200px;
 }
 .contactFormBox {
     width: 60%;
     height: 60%;
-    background-color: var(--highlight-color);
     border-radius: 10px;
-    box-shadow: 0 0 10px 0 var(--shadow-color);
 }
 .contactForm {
     display: flex;
@@ -26,22 +20,23 @@
 label {
     display: block;
     margin-bottom: 1em;
+    font-size: 1.2em;
 }
-
 input,
 textarea {
     width: 100%;
     padding: 0.5em;
     font-family: inherit;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 textarea {
     height: 10em;
+    resize: none;
 }
 button {
     align-self: self-end;
-}
-textarea {
-    resize: none;
 }
 
 @media screen and (max-width: 768px) {

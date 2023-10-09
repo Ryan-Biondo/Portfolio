@@ -30,7 +30,7 @@
     --highlight-color: #3498db;
     --accent-color: #24f1ff;
     --secondary-color: #eb7900;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 html,
@@ -46,6 +46,7 @@ body {
 }
 p {
     font-size: 1.2em;
+    width: 100%;
 }
 a {
     color: var(--secondary-text);
@@ -55,7 +56,6 @@ h2 {
     user-select: none;
     font-size: 2em;
     margin: 1em 0 0.5em;
-    padding-top: 40px;
 }
 .main {
     display: flex;
@@ -64,7 +64,7 @@ h2 {
 }
 .button {
     user-select: none;
-    margin: 1em 2em 0;
+    margin-top: 20px;
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -88,6 +88,24 @@ img {
     box-shadow: 3px 3px 2px var(--shadow-color);
     transform: translate(2px, 2px);
     transition: 0.4s;
+}
+.canvasPosBox {
+    position: relative;
+    left: 0;
+    top: -200px;
+}
+.canvasPosOct {
+    position: relative;
+    height: 150px;
+}
+
+#tetrahedronCanvas,
+#boxCanvas,
+#octahedronCanvas {
+    width: 100%;
+    z-index: -999;
+    position: absolute;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 399px) {

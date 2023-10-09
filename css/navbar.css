@@ -1,5 +1,6 @@
-/* Styles for the navigation bar */
 #nav {
+    padding-top: 3px;
+    padding-bottom: 1px;
     user-select: none;
     position: fixed;
     display: flex;
@@ -42,7 +43,6 @@
     cursor: pointer;
 }
 
-/* Styles for both main and mobile navigation links */
 .navLinks,
 .mobileNavLinks {
     list-style: none;
@@ -58,7 +58,6 @@
     cursor: pointer;
 }
 
-/* Styles for the mobile navigation links */
 .mobileNavLinks {
     display: none;
     flex-direction: column;
@@ -87,7 +86,6 @@
     color: var(--highlight-color);
 }
 
-/* Styles for the menu icon and close icon */
 #menuIcon,
 #xIcon {
     font-size: 2.5em;
@@ -96,7 +94,6 @@
     margin-right: 0.5em;
 }
 
-/* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .navLinks {
         display: none;

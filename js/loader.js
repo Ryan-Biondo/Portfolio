@@ -1,17 +1,12 @@
-// Simulating asset loading for 3 seconds
-setTimeout(function () {
+// Simulate asset loading for 3 seconds
+setTimeout(() => {
   document.getElementById('loadingEllipsis').style.display = 'none';
   document.getElementById('mainContent').style.display = 'block';
 }, 3000);
 
-// JavaScript to hide the arrow on scroll
-document.addEventListener('scroll', function () {
+// Hide the arrow on scroll
+document.addEventListener('scroll', () => {
   const arrowElement = document.querySelector('.scroll-indicator');
 
-  if (window.scrollY > 100) {
-    // Hide after scrolling 100px
-    arrowElement.style.opacity = '0';
-  } else {
-    arrowElement.style.opacity = '1';
-  }
+  arrowElement.style.opacity = window.scrollY > 100 ? '0' : '1';
 });

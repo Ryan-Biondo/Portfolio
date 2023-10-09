@@ -28,7 +28,7 @@ footer {
 }
 
 .footerText {
-    font-size: 1em;
+    font-size: 0.8em;
     margin: 40px auto 0;
     padding: 0;
     width: 300px;
@@ -40,7 +40,7 @@ footer {
     padding: 0;
     width: 300px;
     text-align: start;
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--primary-text);
     cursor: pointer;
     transition: 0.4s;
@@ -79,8 +79,13 @@ footer {
 }
 
 .footerResume {
-    margin: 20px;
+    margin: 50px 20px 20px;
+
     font-size: 1.3em;
+}
+.resumeLink {
+    color: var(--secondary-text);
+    transition: 0.4s;
 }
 
 .footerCopyright {

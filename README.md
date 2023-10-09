@@ -37,5 +37,5 @@ biondo-portfolio
 ## Key Features
 
 - Dark Mode Toggle
-- Dynamic 3D Animations
+- 3D Animations
 - Responsive Design

@@ -8,6 +8,7 @@ This project is my personal portfolio website showcasing my skills, projects, an
 
 ## File Structure
 
+```
 biondo-portfolio
 ├── css
 │ ├── about.css
@@ -30,6 +31,7 @@ biondo-portfolio
 │ ├── tetrahedronCanvas.js
 │ └── theme.js
 └── README.md
+```
 
 - CSS: Organized into separate files based on components (e.g., navbar.css, projects.css).
 - JS: Separate files for different interactive elements and 3D animations using Three.js.

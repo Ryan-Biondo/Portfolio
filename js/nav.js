@@ -50,14 +50,25 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Highlight nav item on scroll
+
 window.addEventListener('scroll', function () {
   const sections = ['intro', 'about', 'projects', 'contact'];
+  const sectionOffsets = {
+    intro: 400,
+    about: 400,
+    projects: 400,
+    contact: 400,
+  };
 
   sections.forEach((section) => {
     const sectionElement = document.getElementById(section);
     const position = sectionElement.getBoundingClientRect();
+    const offset = sectionOffsets[section] || 0;
 
-    if (position.top <= window.innerHeight && position.bottom >= 0) {
+    if (
+      position.top <= window.innerHeight - offset &&
+      position.bottom >= offset
+    ) {
       // Remove active class from all nav links
       document
         .querySelectorAll('.navLinks a, .mobileNavLinks a')

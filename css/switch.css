@@ -1,8 +1,8 @@
 .switch {
     user-select: none;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: -50px;
     width: 60px;
     height: 34px;
 }
@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--secondary-bg);
     transition: 0.4s;
 }
 
@@ -36,7 +36,7 @@
 }
 
 input:checked + .slider {
-    background-color: #2196f3;
+    background-color: var(--highlight-color);
 }
 
 input:checked + .slider:before {

@@ -3,6 +3,9 @@
 @import "intro.css";
 @import "switch.css";
 @import "about.css";
+@import "projects.css";
+@import "contact.css";
+@import "footer.css";
 
 /* Light Theme */
 :root {
@@ -14,6 +17,7 @@
     --highlight-color: #3498db;
     --accent-color: #24f1ff;
     --secondary-color: #eb7900;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Dark Theme */
@@ -21,11 +25,12 @@
     --primary-bg: #131313;
     --secondary-bg: #1e1e1e;
     --hover-bg: #2e2e2e;
-    --primary-text: #cccccc;
-    --secondary-text: #a3a3a3;
+    --primary-text: #e9e9e9;
+    --secondary-text: #c0c0c0;
     --highlight-color: #3498db;
     --accent-color: #24f1ff;
     --secondary-color: #eb7900;
+    --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 html,
@@ -41,14 +46,16 @@ body {
 }
 p {
     font-size: 1.2em;
+    width: 100%;
 }
 a {
     color: var(--secondary-text);
     text-decoration: none;
 }
 h2 {
+    user-select: none;
     font-size: 2em;
-    margin: 1em 0 1.5em;
+    margin: 1em 0 0.5em;
 }
 .main {
     display: flex;
@@ -56,7 +63,8 @@ h2 {
     align-items: center;
 }
 .button {
-    margin: 1em 2em 0;
+    user-select: none;
+    margin-top: 20px;
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -67,16 +75,37 @@ h2 {
     font-weight: bold;
     font-family: inherit;
     cursor: pointer;
-    box-shadow: 5px 5px 2px var(--hover-bg);
+    box-shadow: 5px 5px 2px var(--shadow-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+img {
+    user-select: none;
+}
 
 .button:hover {
-    box-shadow: 3px 3px 2px var(--hover-bg);
+    box-shadow: 3px 3px 2px var(--shadow-color);
     transform: translate(2px, 2px);
     transition: 0.4s;
+}
+.canvasPosBox {
+    position: relative;
+    left: 0;
+    top: -200px;
+}
+.canvasPosOct {
+    position: relative;
+    height: 150px;
+}
+
+#tetrahedronCanvas,
+#boxCanvas,
+#octahedronCanvas {
+    width: 100%;
+    z-index: -999;
+    position: absolute;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 399px) {

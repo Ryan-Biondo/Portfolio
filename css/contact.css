@@ -1,0 +1,54 @@
+.contact {
+    padding-bottom: 240px;
+    padding-top: 200px;
+}
+.contactFormBox {
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: space-between;
+    margin: 0 2em;
+    height: 100%;
+    padding: 1em 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-family: inherit;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+textarea {
+    height: 10em;
+    resize: none;
+}
+button {
+    align-self: self-end;
+}
+
+@media screen and (max-width: 768px) {
+    .contactFormBox {
+        width: 90%;
+    }
+    button {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 460px) {
+    .contact {
+        background-position: center 150px;
+    }
+}

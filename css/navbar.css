@@ -9,13 +9,14 @@
     height: 50px;
     width: 100%;
     z-index: 100;
-    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 7px var(--shadow-color);
     text-transform: uppercase;
     visibility: hidden;
     opacity: 0;
     transition:
-        opacity 0.3s ease-out,
-        visibility 0.3s ease-out;
+        0.4s,
+        opacity 0.4s ease-out,
+        visibility 0.4s ease-out;
 }
 
 .navVisible {
@@ -27,7 +28,7 @@
     display: flex;
     align-items: center;
     list-style: none;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .navPic {
@@ -37,7 +38,7 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 20%;
-    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 7px var(--shadow-color);
     cursor: pointer;
 }
 
@@ -46,12 +47,12 @@
 .mobileNavLinks {
     list-style: none;
     display: flex;
-    font-size: 1.2em; /* Increase font size for larger links */
+    font-size: 1.1em;
 }
 
 .navLinks a,
 .mobileNavLinks a {
-    margin: 0 1em; /* Adjust the margin as needed for spacing */
+    margin: 0 0.8em;
     color: var(--primary-text);
     text-decoration: none;
     cursor: pointer;
@@ -63,17 +64,15 @@
     flex-direction: column;
     background-color: var(--primary-bg);
     width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px var(--shadow-color);
     text-align: end;
     top: 50px;
     margin: 0;
     padding: 0;
     font-size: 0.8em;
-    position: absolute; /* Add this line to position the dropdown menu */
-    z-index: 101; /* Ensure a higher z-index than the nav bar */
+    position: absolute;
 }
 
-/* Set display property for .mobileNavLinks.active */
 .mobileNavLinks.active {
     display: flex;
 }
@@ -99,17 +98,14 @@
 
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
-    /* Hide the main navigation links */
     .navLinks {
         display: none;
     }
 
-    /* Show the menu icon */
     #menuIcon {
         display: block;
     }
 
-    /* Hide the close icon */
     #xIcon {
         display: none;
     }

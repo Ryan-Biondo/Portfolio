@@ -1,21 +1,30 @@
+#about {
+    padding-top: 100px;
+}
+
 h3 {
     text-align: center;
     margin: 0;
 }
+
 .aboutMeSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding-bottom: 250px;
 }
+
 .aboutDesc {
     width: 600px;
 }
+
 .aboutMeContact {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .skillsList {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +33,9 @@ h3 {
     list-style-type: none;
     padding: 25px 0;
     justify-content: center;
+    font-size: 1.15em;
 }
+
 .skillsListItem {
     position: relative;
     margin-bottom: 10px;
@@ -52,40 +63,45 @@ h3 {
     font-size: 14px;
     z-index: 1;
 }
+
+#threejsIcon,
+#typescriptIcon {
+    vertical-align: middle;
+}
+
 #threejsIcon {
     width: 1.3em;
     height: 1.3em;
-    vertical-align: middle;
 }
+
 #typescriptIcon {
     width: 1em;
     height: 1em;
-    vertical-align: middle;
 }
 
 @media screen and (max-width: 992px) {
     .aboutDesc {
         width: 80vw;
     }
+
     .aboutMeSection {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 5em;
     }
-
-    h3 {
-        text-align: center;
-    }
 }
+
 @media screen and (max-width: 399px) {
     .skillsListItem {
         font-size: 0.9em;
         padding: 2px;
     }
+
     .skillsList {
         margin-bottom: 0.5em;
     }
+
     .aboutMeContact {
         width: 100%;
         margin: 10px 0;

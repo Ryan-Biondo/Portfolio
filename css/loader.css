@@ -1,6 +1,7 @@
 #mainContent {
     display: none;
 }
+
 #loadingEllipsis {
     user-select: none;
     display: flex;
@@ -28,6 +29,7 @@
         transform: translateY(-10px);
     }
 }
+
 .scroll-indicator {
     position: absolute;
     top: 90vh;

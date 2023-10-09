@@ -7,19 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initially set the mode and toggle state based on user's system preference
   if (prefersDarkScheme) {
     document.body.classList.add('dark-mode');
-    darkModeToggle.checked = true; // Set the toggle switch to on
+    darkModeToggle.checked = true;
   }
 
   darkModeToggle.addEventListener('change', function () {
-    if (this.checked) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
+    document.body.classList.toggle('dark-mode', this.checked);
   });
 });
 
 document.getElementById('grabTab').addEventListener('click', function () {
-  const socials = document.getElementById('socials');
-  socials.classList.toggle('hidden');
+  document.getElementById('socials').classList.toggle('hidden');
 });

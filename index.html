@@ -6,11 +6,22 @@
     <meta name="msapplication-TileColor" content="#eb7900" />
     <meta name="theme-color" content="#eb7900" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#eb7900" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#eb7900" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +33,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <title>Ryan Biondo Web Development Portfolio</title>
+    <title>Ryan Biondo Web Developer Portfolio</title>
   </head>
   <body>
     <div id="loadingEllipsis">
@@ -48,30 +59,59 @@
         <i class="fas fa-times" id="xIcon"></i>
 
         <ul class="navLinks">
-          <li><a href="#intro">Resume</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#intro" aria-label="Navigate to Resume Section">Resume</a>
+          </li>
+          <li>
+            <a href="#about" aria-label="Navigate to About Section">About</a>
+          </li>
+          <li>
+            <a href="#projects" aria-label="Navigate to Projects Section"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" aria-label="Navigate to Contact Section"
+              >Contact</a
+            >
+          </li>
         </ul>
         <ul class="mobileNavLinks">
-          <li><a href="#intro">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#intro" aria-label="Navigate to Resume Section">Home</a>
+          </li>
+          <li>
+            <a href="#about" aria-label="Navigate to About Section">About</a>
+          </li>
+          <li>
+            <a href="#projects" aria-label="Navigate to Projects Section"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" aria-label="Navigate to Contact Section"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
 
       <section class="introSection" id="intro">
         <h1 class="slidingDownDiv">
-          Ryan <span class="biondoColor">Biondo</span>
+          <span class="name">Ryan</span> <span class="biondoColor">Biondo</span>
         </h1>
         <p class="jobTitle slidingDownDiv">Web Developer</p>
-        <p class="downloadResume slidingDownDiv">Download my resume here!</p>
+        <p class="hello slidingDownDiv">
+          Crafting digital experiences that aim to be both beautiful and
+          impactful.
+        </p>
         <a
           href="/images/Ryan-Biondo-Resume.pdf"
           class="slidingDownDiv"
           download>
-          <button class="button"><i class="fas fa-download"></i> Resume</button>
+          <button class="button" aria-label="Download Resume">
+            <i class="fas fa-download"></i> Resume
+          </button>
         </a>
         <div class="scroll-indicator">
           <i class="arrow-down"></i>
@@ -107,7 +147,10 @@
           <i class="fas fa-envelope"></i>
         </a>
         <label class="switch">
-          <input type="checkbox" id="darkModeToggle" />
+          <input
+            type="checkbox"
+            id="darkModeToggle"
+            aria-label="Toggle Dark Mode" />
           <span class="slider round"></span>
         </label>
         <div id="grabTab"></div>
@@ -204,9 +247,9 @@
           <div class="aboutMeContact">
             <p class="aboutDesc">
               Specialized in JavaScript and React, I'm a web developer based in
-              Colorado known for tenacity and rapid delivery. I add value to
+              Colorado praised for tenacity and rapid delivery. I add value to
               teams by asking the right questions early and embracing feedback
-              to improve outcomes. I also contribute to the community as the
+              to improve outcomes. I contribute to the community as the
               organizer of the coloradoSprings.js meetup. Actively seeking the
               next challenging project.
             </p>
@@ -227,7 +270,7 @@
           <div class="projectBox">
             <img
               class="projectImage"
-              src="images/astropix-screenshot.jpg"
+              src="images/astropixscreenshot.jpg"
               alt="AstroPix Gallery Screenshot" />
 
             <div class="projectText">
@@ -237,11 +280,10 @@
                 Chakra UI, React Query and React Router. The calendar is
                 imported from date-picker and synchronizes the date with the
                 chosen picture. Utilized Chakra UI components for styling and
-                responsiveness, and generic custom hooks for modular structure.
-                We protect the API key, apply throttling, and add security
-                headings using a Node.js server built with Express. The
-                integration of infinite scrolling and other navigation features
-                provide users with a platform to enjoy and learn about
+                responsiveness. We protect the API key, apply throttling, and
+                add security headings using a Node.js server built with Express.
+                The integration of infinite scrolling and other navigation
+                features provide users with a platform to enjoy and learn about
                 astronomy.
               </p>
               <div class="projectLinks">
@@ -269,12 +311,10 @@
 
             <div class="projectText">
               <p class="projectDescript">
-                <strong>The Code Quiz</strong> .is a tool for developers, that
-                connects with the server to retrieve a random assortment of
-                questions from a pool of quizzes. This project was built using
-                React and TypeScript. It provides an interactive platform for
-                developers to test their knowledge across a multitude of
-                categories.
+                <strong>The Code Quiz</strong> is a quiz for learning
+                developers. Uses Node.js to retrieve a random assortment of
+                questions based on difficulty level and provides a score at the
+                end. Built using React and TypeScript.
               </p>
               <div class="projectLinks">
                 <a

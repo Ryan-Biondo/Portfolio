@@ -2,12 +2,14 @@ footer {
     background-color: var(--secondary-bg);
     transition: 0.4s;
 }
+
 .footerMain {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
 }
+
 .footerSide {
     display: flex;
     flex-direction: column;
@@ -16,12 +18,15 @@ footer {
     width: 100%;
     margin-right: 50px;
 }
+
 .footerDescription {
     display: flex;
     flex-direction: column;
     align-items: space-around;
     margin-left: 50px;
+    font-size: 1.2em;
 }
+
 .footerText {
     font-size: 1em;
     margin: 40px auto 0;
@@ -29,30 +34,33 @@ footer {
     width: 300px;
     text-align: start;
 }
+
 .footerCTA {
     margin: 40px auto 20px;
     padding: 0;
     width: 300px;
     text-align: start;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: var(--primary-text);
     cursor: pointer;
     transition: 0.4s;
 }
+
 .footerCTA a {
     color: var(--highlight-color);
 }
 
 .footerSocials {
     display: flex;
-    margin: 40px 0 0;
     justify-content: space-between;
     font-size: 2.5em;
     width: 300px;
 }
+
 .footerSocials i {
     color: var(--primary-text);
 }
+
 .footerLink {
     width: 50px;
     height: 50px;
@@ -63,12 +71,16 @@ footer {
     border-radius: 10px;
     margin: 0.5em 0;
     transition: 0.4s;
+    color: var(--primary-bg);
 }
+
 .footerLink:hover {
     background-color: var(--hover-bg);
 }
+
 .footerResume {
     margin: 20px;
+    font-size: 1.3em;
 }
 
 .footerCopyright {
@@ -78,44 +90,45 @@ footer {
     margin: 0;
     padding: 2em 0;
     width: 100%;
-    font-size: 0.8em;
-}
-.footerLink {
-    color: var(--primary-bg);
+    font-size: 1em;
 }
 
 @media screen and (max-width: 768px) {
     .footerMain {
         flex-direction: column;
     }
+
     .footerSide {
         margin: 0 auto;
         align-items: center;
     }
-    footer {
-        font-size: 0.9em;
-    }
+
     .footerDescription {
         margin: 0;
     }
+
     .footerText {
         font-size: 0.9em;
     }
+
     .footerSocials {
         margin-top: 0;
     }
+
     .footerLink {
         width: 30px;
         height: 30px;
     }
 }
+
 @media screen and (max-width: 399px) {
     .footerText,
     .footerCTA,
     .footerSocials {
         width: 80vw;
     }
+
     .footerCopyright {
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 }

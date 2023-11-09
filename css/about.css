@@ -65,7 +65,9 @@ h3 {
 }
 
 #threejsIcon,
-#typescriptIcon {
+#nextjsIcon,
+#typescriptIcon,
+#jQueryIcon {
     vertical-align: middle;
 }
 
@@ -74,9 +76,16 @@ h3 {
     height: 1.3em;
 }
 
-#typescriptIcon {
-    width: 1em;
-    height: 1em;
+#typescriptIcon,
+#nextjsIcon,
+#jQueryIcon {
+    width: 0.9em;
+    height: 0.9em;
+}
+#typescriptIcon,
+#threejsIcon {
+    margin-right: 6px;
+    margin-bottom: 2px;
 }
 
 @media screen and (max-width: 992px) {

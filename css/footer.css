@@ -40,7 +40,7 @@ footer {
     padding: 0;
     width: 300px;
     text-align: start;
-    font-size: 1em;
+    font-size: 0.8em;
     color: var(--primary-text);
     cursor: pointer;
     transition: 0.4s;
@@ -79,8 +79,7 @@ footer {
 }
 
 .footerResume {
-    margin: 50px 20px 20px;
-
+    margin: 50px 20px 40px;
     font-size: 1.3em;
 }
 .resumeLink {
@@ -123,6 +122,12 @@ footer {
     .footerLink {
         width: 30px;
         height: 30px;
+    }
+    .footerResume {
+        margin-left: 0;
+    }
+    .resumeLink {
+        justify-content: start;
     }
 }
 

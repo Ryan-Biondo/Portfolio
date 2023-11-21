@@ -17,6 +17,7 @@ footer {
     justify-content: space-around;
     width: 100%;
     margin-right: 50px;
+    /* margin-top: 50px; */
 }
 
 .footerDescription {
@@ -55,6 +56,8 @@ footer {
     justify-content: space-between;
     font-size: 2.5em;
     width: 300px;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
 .footerSocials i {
@@ -79,7 +82,7 @@ footer {
 }
 
 .footerResume {
-    margin: 50px 20px 40px;
+    margin: 0px 20px 40px;
     font-size: 1.3em;
 }
 .resumeLink {
